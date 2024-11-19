@@ -1,0 +1,60 @@
+.container {
+    background-image: url('../../assets/homepage1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    /* margin-top: -50px; */
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+
+
+option {
+    padding: 10px;
+    background-color:#1a7bac;;
+}

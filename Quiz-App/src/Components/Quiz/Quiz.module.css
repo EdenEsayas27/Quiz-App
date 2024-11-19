@@ -1,0 +1,162 @@
+/* Quiz.module.css */
+
+.centered {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  height: 120vh;  
+  width: 100vw;  
+  background-color: black; /* Ensure the parent container takes full height */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  margin-top: 15px;
+  width: 40vw; /* Initially 40% of the viewport width */
+  height: 116vh;
+}
+
+.quizContainer label {
+  background-color: whitesmoke;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Quiz_title h2 {
+  margin-bottom: -1px;
+}
+
+.Quiz_title hr {
+  margin-bottom: 30px;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 100%;
+}
+
+.optionLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+.navButton,
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: #28a745; /* Green for the submit button */
+  margin: 5%;
+  /* width: 120px; */
+}
+
+.navButton {
+  width: 80px;
+}
+
+.navButton:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.resultButton {
+  margin: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens wider than 768px (Tablets and desktops) */
+@media screen and (min-width: 768px) {
+  .container {
+      width: 50vw; /* Adjust width for larger screens */
+      padding: 30px;
+  }
+
+  .quizContainer label {
+      padding: 25px;
+  }
+
+  .submitButton {
+      width: 40%; /* Slightly smaller button size */
+  }
+}
+
+/* For screens between 480px and 768px (Medium screens) */
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .container {
+      width: 60vw; /* Adjust width for medium-sized screens */
+  }
+
+  .quizContainer label {
+      padding: 18px;
+  }
+
+  .submitButton {
+      width: 60%; /* Adjust width for better fit */
+  }
+
+  .navButton {
+      max-width: 70px;
+  }
+}
+
+/* For screens smaller than 480px (Mobile screens) */
+@media screen and (max-width: 480px) {
+  .container {
+      width: 80vw; /* Adjust width for smaller screens */
+      padding: 15px;
+  }
+
+  .quizContainer label {
+      padding: 15px;
+  }
+
+  .submitButton {
+      width: 80%; /* Larger button size for mobile */
+  }
+
+  .navButton {
+      max-width: 60px; /* Smaller button for mobile */
+  }
+}

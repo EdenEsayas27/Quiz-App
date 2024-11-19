@@ -15,8 +15,8 @@ function App() {
     <Router>
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route  path='/catagories' element={<Catagories />} />
-      <Route path='/categories/general-knowledge' element={<GeneralKnowledge />} />
+      <Route  path='/categories' element={<Catagories />} />
+      <Route path='/categories/generalknowledge' element={<GeneralKnowledge />} />
       <Route path='/categories/books' element={<Books />} />
       <Route path='/categories/history' element={<History />} />
       <Route path='/categories/music' element={<Music />} />

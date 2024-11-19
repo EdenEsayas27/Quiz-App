@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import classes from './Question.module.css'
+import Header from '../Header/Header';
 
 function Question({Question_cata}) {
     const [visiblity,setVisiblity] = useState(false);
@@ -13,11 +15,13 @@ function Question({Question_cata}) {
     const category = Question_cata || 'defaultCategory';
   return (
     <div>
-      <div>
+      <div><Header/></div>
+      
+      <div className={classes.container}>
     <h2>choose type of questions</h2>   
-    <div onClick={toggleVisiblity}> 1 True / False</div> 
+    <div className={classes.category} onClick={toggleVisiblity}> 1 True / False</div> 
     { visiblity && (
-        <div>
+        <div className={classes.details}>
             <h3>Difficulty level</h3>
             <ul>
               <Link to={`/${category}/boolean/easy`}><li>Easy</li></Link> 
@@ -29,9 +33,9 @@ function Question({Question_cata}) {
         
             }
     
-    <div onClick={toggleIsvisible}> 2 multiple </div>
+    <div className={classes.category} onClick={toggleIsvisible}> 2 multiple Choice</div>
     { isVisible && (
-        <div>
+        <div className={classes.details} >
             <h3>Difficulty level</h3>
             <ul>
               <Link to={`/${category}/multiple/easy`}><li>Easy</li></Link> 

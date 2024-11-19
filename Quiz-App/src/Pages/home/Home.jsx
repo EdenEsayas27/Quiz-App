@@ -1,30 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Header from '../../Components/Header/Header';
 import {Link} from 'react-router-dom'
+import classes from './Home.module.css'
 function Home() {
-    const [selectedValue,setSelectedValue] = useState("");
-    const  handleChange=(event)=>{
-      setSelectedValue(event.target.value)
-     }
+   
   return (
-    <div>
-        <div>
-            <Link to="/">HOME</Link>
-            <select id="dropDown" value={selectedValue} onChange={handleChange}>
-                <option value=""  disabled>
-                    Catagories
-                </option>
-                <option value="General Knowledge">General Knowledge</option>
-                <option value="Books">Books</option>
-                <option value="History">History</option>
-                <option value="Music">music</option>
-
-            </select>
-
-        </div>
+    <div className={classes.container}>
+      <Header />
       <h1>Charm Quiz App</h1>
       <h2>Quizzes Made Fun!
       Challenge Yourself, Learn Something New!</h2>
-     <Link to="/Catagories"><button>Get Started</button></Link> 
+      <div className={classes.buttonContainer}>
+     <Link to="/Categories"><button>Get Started</button></Link>
+     </div> 
     </div>
   )
 }

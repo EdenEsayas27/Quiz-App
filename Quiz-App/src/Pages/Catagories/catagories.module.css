@@ -1,0 +1,75 @@
+/* body{
+    background-color: rgba(53, 53, 253, 0.733);
+} */
+.container {
+    padding: 20px;
+    text-align: center;
+   
+  }
+  
+  .linksContainer {
+    display: flex;
+    justify-content:center;
+    gap: 5px;
+    flex-wrap: wrap;
+    width:90vw;
+  }
+  
+  .linksContainer a {
+    
+    display: block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-image 0.3s ease, transform 0.3s ease;
+  }
+  
+  .linksContainer a:hover {
+    transform: scale(1.05);
+    color :aqua;
+  }
+  .linksContainer a label{
+    color: brown;
+    font-size: larger;
+  }
+  .generalKnowledge , .books , .history ,.music{
+    height: 300px;
+    width:500px;
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .generalKnowledge {
+    background-image: url('https://cdn.pixabay.com/photo/2023/03/19/14/04/lamp-7862625_640.png'); 
+  }
+  
+  .books {
+   background-image: url('https://cdn.pixabay.com/photo/2022/07/08/10/37/books-7309019_640.png');
+   
+  }
+  
+  .history {
+    background-image: url('https://cdn.pixabay.com/photo/2023/03/28/18/28/hieroglyph-7883891_640.jpg');
+    background-color:rgb(159, 160, 160);
+  }
+  
+  .music {
+    background-image:url('https://cdn.pixabay.com/photo/2017/08/02/09/42/music-2570451_640.jpg') ; 
+  }
+  .title{
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom:40px;
+    text-align:center;
+    
+  }
+  .title p{
+    font-weight: bold;
+    font-size:3rem;
+    color:rgb(149, 150, 151)
+  }
+  
