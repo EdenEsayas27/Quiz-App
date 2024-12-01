@@ -39,21 +39,6 @@ CSS: For styling the components.
 Axios : For fetching quiz questions from Trivia API(https://opentdb.com).
 React Router : For navigation between pages
 
-Project Structure
-
-Quiz-App/
-├── public/            # Static assets
-│
-├── src/               
-│   ├── components/    # Reusable components (buttons, modals, etc.)
-│   ├── pages/         # Page-level components (e.g., HomePage, QuizPage, ResultsPage)
-│   ├── utils/         # Utility functions (e.g., data fetching, helper functions)
-│   ├── App.jsx        # Root component
-│   ├── main.jsx       # Entry point for React
-│   └── index.css      # Global CSS styles
-│
-├── README.md          # Project documentation
-└── package.json       # Project dependencies and scripts
 
 Future Improvements
 Add a timer feature for quizzes.
